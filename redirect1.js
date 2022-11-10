@@ -5,5 +5,5 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   let value = params.index; // "some_value"
 
 setTimeout(() => {
-    window.location.href = "../redirect2/redirect2.html?index=" + (parseInt(value)+1);
+    // window.location.href = "https://gmoyer.github.io/csci1000-website/redirect/index.html?index=" + (parseInt(value)+1);
 }, 10);
