@@ -9,5 +9,5 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   document.getElementById("loading").innerHTML = "Loading: " + value; 
   document.body.style.backgroundColor = Math.random(); 
 setTimeout(() => {
-    // window.location.href = "https://gmoyer.github.io/csci1000-website/redirect/index.html?index=" + (parseInt(value)+1);
+    window.location.href = "https://gmoyer.github.io/csci1000-website/redirect/index.html?index=" + (parseInt(value)+1);
 }, 10);
