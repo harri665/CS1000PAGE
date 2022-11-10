@@ -3,7 +3,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   });
   // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
   let value = params.index; // "some_value"
-  if(params.index == NaN) {
+  if(params.index == null) {
     value = 1; 
   }
   document.getElementById("loading").innerHTML = "Loading: " + value; 
